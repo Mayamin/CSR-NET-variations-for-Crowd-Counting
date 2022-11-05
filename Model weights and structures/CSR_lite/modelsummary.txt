@@ -1,0 +1,86 @@
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, None, None, 3)]   0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, None, None, 64)    1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, None, None, 64)    36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, None, None, 64)    0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, None, None, 128)   73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, None, None, 128)   147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, None, None, 128)   0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, None, None, 256)   295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, None, None, 256)   590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, None, None, 256)   590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, None, None, 256)   0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, None, None, 512)   1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, None, None, 512)   2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, None, None, 512)   2359808   
+                                                                 
+ batch_normalization_7 (Batc  (None, None, None, 512)  2048      
+ hNormalization)                                                 
+                                                                 
+ conv2d_7 (Conv2D)           (None, None, None, 128)   589824    
+                                                                 
+ batch_normalization_8 (Batc  (None, None, None, 128)  512       
+ hNormalization)                                                 
+                                                                 
+ activation_7 (Activation)   (None, None, None, 128)   0         
+                                                                 
+ conv2d_8 (Conv2D)           (None, None, None, 128)   147456    
+                                                                 
+ batch_normalization_9 (Batc  (None, None, None, 128)  512       
+ hNormalization)                                                 
+                                                                 
+ activation_8 (Activation)   (None, None, None, 128)   0         
+                                                                 
+ conv2d_9 (Conv2D)           (None, None, None, 64)    73728     
+                                                                 
+ batch_normalization_10 (Bat  (None, None, None, 64)   256       
+ chNormalization)                                                
+                                                                 
+ activation_9 (Activation)   (None, None, None, 64)    0         
+                                                                 
+ conv2d_10 (Conv2D)          (None, None, None, 64)    36864     
+                                                                 
+ batch_normalization_11 (Bat  (None, None, None, 64)   256       
+ chNormalization)                                                
+                                                                 
+ activation_10 (Activation)  (None, None, None, 64)    0         
+                                                                 
+ conv2d_11 (Conv2D)          (None, None, None, 16)    9216      
+                                                                 
+ batch_normalization_12 (Bat  (None, None, None, 16)   64        
+ chNormalization)                                                
+                                                                 
+ activation_11 (Activation)  (None, None, None, 16)    0         
+                                                                 
+ conv2d_12 (Conv2D)          (None, None, None, 16)    2304      
+                                                                 
+ batch_normalization_13 (Bat  (None, None, None, 16)   64        
+ chNormalization)                                                
+                                                                 
+ activation_12 (Activation)  (None, None, None, 16)    0         
+                                                                 
+ conv2d_13 (Conv2D)          (None, None, None, 1)     17        
+                                                                 
+ activation_13 (Activation)  (None, None, None, 1)     0         
+                                                                 
+=================================================================
+Total params: 8,498,385
+Trainable params: 8,496,529
+Non-trainable params: 1,856
+_________________________________________________________________
